@@ -8,18 +8,16 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Games" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers." />
-<meta property="og:description" content="A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers." />
-<link rel="canonical" href="https://srihitakott1213.github.io/GroupFastpages/frontend/snake" />
-<meta property="og:url" content="https://srihitakott1213.github.io/GroupFastpages/frontend/snake" />
+<meta name="description" content="A pretty advanced use of JavaScript building classic games." />
+<meta property="og:description" content="A pretty advanced use of JavaScript building classic games." />
+<link rel="canonical" href="https://srihitakott1213.github.io/GroupFastpages/frontend/games" />
+<meta property="og:url" content="https://srihitakott1213.github.io/GroupFastpages/frontend/games" />
 <meta property="og:site_name" content="fastpages" />
-<meta property="og:image" content="https://srihitakott1213.github.io/GroupFastpages/images/snake.png" />
 <meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://srihitakott1213.github.io/GroupFastpages/images/snake.png" />
+<meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Games" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers.","headline":"Games","image":"https://srihitakott1213.github.io/GroupFastpages/images/snake.png","url":"https://srihitakott1213.github.io/GroupFastpages/frontend/snake"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"A pretty advanced use of JavaScript building classic games.","headline":"Games","url":"https://srihitakott1213.github.io/GroupFastpages/frontend/games"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/GroupFastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://srihitakott1213.github.io/GroupFastpages/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/GroupFastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -66,7 +64,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/GroupFastpages/frontend/snake">Games</a><a class="page-link" href="/GroupFastpages/about/">About Me</a><a class="page-link" href="/GroupFastpages/search/">Search</a><a class="page-link" href="/GroupFastpages/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/GroupFastpages/frontend/games">Games</a><a class="page-link" href="/GroupFastpages/about/">About Me</a><a class="page-link" href="/GroupFastpages/search/">Search</a><a class="page-link" href="/GroupFastpages/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -74,136 +72,11 @@ window.onload = wrap_img;
         <table>
     <tr>
         <td><img src="/GroupFastpages//images/loop.webp" height="60" title="Data" alt="" /></td>
-        <td><a href="/GroupFastpages/api/overview">Pong</a></td>
+        <td><a href="/GroupFastpages/_posts/ponggame">Pong</a></td>
         <td><a href="/GroupFastpages/api/weather">Tetris</a></td>
         <td><a href="/GroupFastpages/api/COVID19">Game</a></td>
     </tr>
 </table>
-
-<style>
-      *, *::after, *::before {
-    box-sizing: border-box;
-  }
-
-  :root {
-    --hue: 200;
-    --saturation: 50%;
-    --foreground-color: hsl(var(--hue), var(--saturation), 75%);
-    --background-color: hsl(var(--hue), var(--saturation), 20%);
-  }
-
-  body {
-    margin: 0;
-    background-color: var(--background-color);
-    overflow: hidden;
-  }
-
-  .paddle {
-    --position: 50;
-
-    position: absolute;
-    background-color: var(--foreground-color);
-    top: calc(var(--position) * 1vh);
-    transform: translateY(-50%);
-    width: 1vh;
-    height: 10vh;
-  }
-
-  .paddle.left {
-    left: 1vw;
-  }
-
-  .paddle.right {
-    right: 1vw;
-  }
-
-  .ball {
-    --x: 50;
-    --y: 50;
-
-    position: absolute;
-    background-color: var(--foreground-color);
-    left: calc(var(--x) * 1vw);
-    top: calc(var(--y) * 1vh);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    width: 2.5vh;
-    height: 2.5vh;
-  }
-
-  .score {
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 7vh;
-    color: var(--foreground-color);
-  }
-
-  .score > * {
-    flex-grow: 1;
-    flex-basis: 0;
-    padding: 0 2vh;
-    margin: 1vh 0;
-    opacity: .5;
-  }
-
-  .score > :first-child {
-    text-align: right;
-    border-right: .5vh solid var(--foreground-color);
-  }
-</style>
-
-<script>
-  import Ball from "js/Ball.js"
-  import Paddle from "js/Paddle.js"
-
-  const ball = new Ball(document.getElementById("ball"))
-  const playerPaddle = new Paddle(document.getElementById("player-paddle"))
-  const computerPaddle = new Paddle(document.getElementById("computer-paddle"))
-  const playerScoreElem = document.getElementById("player-score")
-  const computerScoreElem = document.getElementById("computer-score")
-
-  let lastTime
-  function update(time) {
-    if (lastTime != null) {
-      const delta = time - lastTime
-      ball.update(delta, [playerPaddle.rect(), computerPaddle.rect()])
-      computerPaddle.update(delta, ball.y)
-      const hue = parseFloat(
-        getComputedStyle(document.documentElement).getPropertyValue("--hue")
-      )
-
-      document.documentElement.style.setProperty("--hue", hue + delta * 0.01)
-
-      if (isLose()) handleLose()
-    }
-
-    lastTime = time
-    window.requestAnimationFrame(update)
-  }
-
-  function isLose() {
-    const rect = ball.rect()
-    return rect.right >= window.innerWidth || rect.left <= 0
-  }
-
-  function handleLose() {
-    const rect = ball.rect()
-    if (rect.right >= window.innerWidth) {
-      playerScoreElem.textContent = parseInt(playerScoreElem.textContent) + 1
-    } else {
-      computerScoreElem.textContent = parseInt(computerScoreElem.textContent) + 1
-    }
-    ball.reset()
-    computerPaddle.reset()
-  }
-
-  document.addEventListener("mousemove", e => {
-    playerPaddle.position = (e.y / window.innerHeight) * 100
-  })
-
-  window.requestAnimationFrame(update)
-</script>
 
 
       </div>
