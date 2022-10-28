@@ -3,9 +3,9 @@
     
         "post0": {
             "title": "Games",
-            "content": "| Pong | Tetris | Game | .",
-            "url": "https://srihitakott1213.github.io/GroupFastpages/frontend/snake",
-            "relUrl": "/frontend/snake",
+            "content": "| Pong | Tetris | Game | . Document . 0 0",
+            "url": "https://srihitakott1213.github.io/GroupFastpages/frontend/pong",
+            "relUrl": "/frontend/pong",
             "date": " • Oct 27, 2022"
         }
         
@@ -47,9 +47,20 @@
 
   
   
+      ,"page0": {
+          "title": "Games",
+          "content": "| Pong | Tetris | Game | .",
+          "url": "https://srihitakott1213.github.io/GroupFastpages/frontend/snake",
+          "relUrl": "/frontend/snake",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page1": {
+
+  
+      ,"page2": {
           "title": "About Me",
           "content": "This website is powered by Nathan, Sri, Alyssa, and Max .",
           "url": "https://srihitakott1213.github.io/GroupFastpages/about/",
@@ -81,7 +92,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://srihitakott1213.github.io/GroupFastpages/robots.txt",
