@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Classic Snake Game | fastpages</title>
+<title>Games | fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Classic Snake Game" />
+<meta property="og:title" content="Games" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers." />
 <meta property="og:description" content="A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers." />
@@ -18,9 +18,9 @@
 <meta property="article:published_time" content="2022-10-27T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://srihitakott1213.github.io/GroupFastpages/images/snake.png" />
-<meta property="twitter:title" content="Classic Snake Game" />
+<meta property="twitter:title" content="Games" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-27T00:00:00-05:00","datePublished":"2022-10-27T00:00:00-05:00","description":"A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers.","headline":"Classic Snake Game","image":"https://srihitakott1213.github.io/GroupFastpages/images/snake.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://srihitakott1213.github.io/GroupFastpages/frontend/snake"},"url":"https://srihitakott1213.github.io/GroupFastpages/frontend/snake"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-27T00:00:00-05:00","datePublished":"2022-10-27T00:00:00-05:00","description":"A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers.","headline":"Games","image":"https://srihitakott1213.github.io/GroupFastpages/images/snake.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://srihitakott1213.github.io/GroupFastpages/frontend/snake"},"url":"https://srihitakott1213.github.io/GroupFastpages/frontend/snake"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/GroupFastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://srihitakott1213.github.io/GroupFastpages/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/GroupFastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -153,6 +153,59 @@ body {
   border-right: .5vh solid var(--foreground-color);
 }
 </style>
+
+<script>
+  import Ball from "./Ball.js"
+import Paddle from "./Paddle.js"
+
+const ball = new Ball(document.getElementById("ball"))
+const playerPaddle = new Paddle(document.getElementById("player-paddle"))
+const computerPaddle = new Paddle(document.getElementById("computer-paddle"))
+const playerScoreElem = document.getElementById("player-score")
+const computerScoreElem = document.getElementById("computer-score")
+
+let lastTime
+function update(time) {
+  if (lastTime != null) {
+    const delta = time - lastTime
+    ball.update(delta, [playerPaddle.rect(), computerPaddle.rect()])
+    computerPaddle.update(delta, ball.y)
+    const hue = parseFloat(
+      getComputedStyle(document.documentElement).getPropertyValue("--hue")
+    )
+
+    document.documentElement.style.setProperty("--hue", hue + delta * 0.01)
+
+    if (isLose()) handleLose()
+  }
+
+  lastTime = time
+  window.requestAnimationFrame(update)
+}
+
+function isLose() {
+  const rect = ball.rect()
+  return rect.right >= window.innerWidth || rect.left <= 0
+}
+
+function handleLose() {
+  const rect = ball.rect()
+  if (rect.right >= window.innerWidth) {
+    playerScoreElem.textContent = parseInt(playerScoreElem.textContent) + 1
+  } else {
+    computerScoreElem.textContent = parseInt(computerScoreElem.textContent) + 1
+  }
+  ball.reset()
+  computerPaddle.reset()
+}
+
+document.addEventListener("mousemove", e => {
+  playerPaddle.position = (e.y / window.innerHeight) * 100
+})
+
+window.requestAnimationFrame(update)
+</script>
+
 
       </div>
     </main><footer class="site-footer h-card">
