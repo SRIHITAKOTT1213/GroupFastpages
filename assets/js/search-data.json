@@ -2,17 +2,6 @@
   
     
         "post0": {
-            "title": "Pong Game",
-            "content": "",
-            "url": "https://srihitakott1213.github.io/GroupFastpages/frontend/pong",
-            "relUrl": "/frontend/pong",
-            "date": " • Oct 27, 2022"
-        }
-        
-    
-  
-    
-        ,"post1": {
             "title": "Our Flask",
             "content": "Link to our flask .",
             "url": "https://srihitakott1213.github.io/GroupFastpages/2022/10/27/flask.html",
@@ -23,7 +12,7 @@
     
   
     
-        ,"post2": {
+        ,"post1": {
             "title": "Accomplishments",
             "content": "Sri: . So far, what I did was I coded the game Snake. First I did it in python, not knowing that it would open in a terminal and I would not be able to put it on my website. So after that I deleted it and I worked on it using Javascript, because it could be put on a website, or so I was told. After I finished that, I changed my part of the Flask but I wasn&#39;t able to put the actual game on there and as it turns out that we have to use fastpages for the frontend, and I am pretty sure I am done with the backend part as well the Devops part, so all I have to work on is the frontend. | . Nathan Kim: . I was off to a pretty rough start when I couldn&#39;t properly commit and sync ANY changes to our group fastpages and flask. However, with the help from access tokens, I was finally able to start coding. As the backend developer, I am working mainly on our Flask repo. Like Sri, I also started off with python, but then realized that it would not display on the website. As a result, I started working using JavaScript in order to work behind the scenes in order to create my game. | . Max Wu: . As the scrum master of loophole games, I partook in mainly planning the project and working on my group assignment, which is creating a pong game in the frontend. In terms of developing, our group is a little behind schedul. However, with everything sorted out today, we now have a clear plan of attack and now know our exact roles in terms of backend and frontend work. For the pong game, I have written a working code for the game in javascript, and I am now transferring that work into a fast pages (frontend). We are mainly planning to finish our game by this weekend, and start on the jokes/api to transfer data from frontend to backend for the leaderboard that will appear on our flask page. | .",
             "url": "https://srihitakott1213.github.io/GroupFastpages/2022/10/27/Accomplishments.html",
@@ -34,7 +23,7 @@
     
   
     
-        ,"post3": {
+        ,"post2": {
             "title": "An Example Markdown Post",
             "content": "PLESA WORK . Basic setup . Jekyll requires blog post files to be named according to the following format: . YEAR-MONTH-DAY-filename.md . Where YEAR is a four-digit number, MONTH and DAY are both two-digit numbers, and filename is whatever file name you choose, to remind yourself what this post is about. .md is the file extension for markdown files. . The first line of the file should start with a single hash character, then a space, then your title. This is how you create a “level 1 heading” in markdown. Then you can create level 2, 3, etc headings as you wish but repeating the hash character, such as you see in the line ## File names above. . Basic formatting . You can use italics, bold, code font text, and create links. Here’s a footnote 1. Here’s a horizontal rule: . . Lists . Here’s a list: . item 1 | item 2 | . And a numbered list: . item 1 | item 2 | Boxes and stuff . This is a quotation . . You can include alert boxes …and… . . You can include info boxes Images . . Code . You can format text and code per usual . General preformatted text: . # Do a thing do_thing() . Python code and output: . # Prints &#39;2&#39; print(1+1) . 2 . Formatting text as shell commands: . echo &quot;hello world&quot; ./some_script.sh --option &quot;value&quot; wget https://example.com/cat_photo1.png . Formatting text as YAML: . key: value - another_key: &quot;another value&quot; . Tables . Column 1 Column 2 . A thing | Another thing | . Tweetcards . Altair 4.0 is released! https://t.co/PCyrIOTcvvTry it with: pip install -U altairThe full list of changes is at https://t.co/roXmzcsT58 ...read on for some highlights. pic.twitter.com/vWJ0ZveKbZ . &mdash; Jake VanderPlas (@jakevdp) December 11, 2019 Footnotes . This is the footnote. &#8617; . |",
             "url": "https://srihitakott1213.github.io/GroupFastpages/markdown/2020/01/14/test-markdown-post.html",
