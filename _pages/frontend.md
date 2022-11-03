@@ -4,7 +4,7 @@ title: Frontend
 permalink: /frontend/overview
 ---
 
-### Frontend w/ the Games
+### Frontend w/ the Gamess
 
 <div>
     <div style="float: left; margin: 0px 10px 10px 0px;">
