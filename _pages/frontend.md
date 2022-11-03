@@ -4,8 +4,6 @@ title: Frontend
 permalink: /frontend/overview
 ---
 
-{% include nav_frontend.html %}
-
 ### Frontend w/ the Games
 
 <div>
