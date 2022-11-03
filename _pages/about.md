@@ -4,5 +4,9 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by Nathan, Sri, Alyssa, and Max
+Hi we're Team Cook! 
+
+No not this Cook 
+
+<img src="http://url/timcook.png" height="100" width="100" >
 

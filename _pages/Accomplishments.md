@@ -4,8 +4,6 @@ title: Accomplishments
 permalink: /accomplishments/
 ---
 
-
-
 **Sri:** 10/26
 - So far, what I did was I coded the game Snake. First I did it in python, not knowing that it would open in a terminal and I would not be able to put it on my website. So after that I deleted it and I worked on it using Javascript, because it could be put on a website, or so I was told. After I finished that, I changed my part of the Flask but I wasn't able to put the actual game on there and as it turns out that we have to use fastpages for the frontend, and I am pretty sure I am done with the backend part as well the Devops part, so all I have to work on is the frontend.
 
