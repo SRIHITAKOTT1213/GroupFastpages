@@ -38,6 +38,22 @@
   
 
   
+      ,"page4": {
+          "title": "",
+          "content": "&lt;!DOCTYPE html&gt; . My Recipe . What do you want to cook today? . &lt;/body&gt; &lt;/html&gt; .",
+          "url": "https://srihitakott1213.github.io/GroupFastpages/",
+          "relUrl": "/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -46,18 +62,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://srihitakott1213.github.io/GroupFastpages/robots.txt",
