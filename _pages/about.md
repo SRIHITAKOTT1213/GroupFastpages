@@ -8,5 +8,5 @@ Hi we're Team Cook!
 
 No not this Cook 
 
-<img src="http://url/timcook.png" height="100" width="100" >
+![]({{site.baseurl}}/images/timcook.png)
 
