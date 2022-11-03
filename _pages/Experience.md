@@ -1,6 +1,6 @@
 ---
 layout: page
-title: <b>N@TM</b>
+title: N@TM
 permalink: /experience/
 ---
 

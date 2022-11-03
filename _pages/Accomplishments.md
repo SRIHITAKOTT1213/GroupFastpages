@@ -1,6 +1,6 @@
 ---
 layout: page
-title: <b>Accomplishments</b>
+title: Accomplishments
 permalink: /accomplishments/
 ---
 

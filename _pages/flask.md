@@ -1,5 +1,5 @@
 ---
-title: <b>Our Flask</b>
+title: Our Flask
 layout: default
 description: Here is our flask website
 ---

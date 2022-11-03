@@ -1,6 +1,6 @@
 ---
 layout: page
-title: <b>About Us!</b>
+title: About Us!
 permalink: /about/
 ---
 
