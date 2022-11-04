@@ -17,6 +17,17 @@
 
   
       ,"page2": {
+          "title": "N@TM",
+          "content": "Our experience at N@TM! Overall, N@TM was a really enjoyable experience to us because we were able to interact with other people. We enjoyed talking to our peers about their projects too. Our favorite projects from other groups was a minesweeper and chess game because they were extremely well made and interactive for the users to play. We also enjoyed talking to our peer’s parents because they asked many questions about our project. We thought our most popular question asked was how we were able to fetch the different recipes in our website. In addition, talking with the CSA kids in the other room was also nice because we got to see how CSA operates their websites (many of them were really good). In conclusion, we had lots of fun at N@tm and we are excited to attend more in the futuree! .",
+          "url": "https://srihitakott1213.github.io/GroupFastpages/experience/",
+          "relUrl": "/experience/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page3": {
           "title": "About Me",
           "content": "This website is powered by Nathan, Sri, Alyssa, and Max .",
           "url": "https://srihitakott1213.github.io/GroupFastpages/about/",
@@ -27,11 +38,22 @@
   
 
   
-      ,"page3": {
+      ,"page4": {
           "title": "Our Flask",
           "content": "Link to our flask .",
           "url": "https://srihitakott1213.github.io/GroupFastpages/_pages/flask.html",
           "relUrl": "/_pages/flask.html",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page5": {
+          "title": "Frontend",
+          "content": "Frontend w/ the Gamess . . Frontend web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website. In this class, we will be using Fastpages on top of GitHub Pages to maximize our presentations, while minimizing our front-end coding. GitHub Pages deployment is performed through Jekyll, which regenerates the website automatically after each commit, tracking can be seen in Actions tab within GitHub. | HTML generation is performed through Liquid, a template language (similar to Jinja2 or Thymeleaf). | CSS style layout is provided by using Themes provided through GH Pages. Each page we make we assume the defined theme and insert our HTML fragments, local page style, and local page JavaScript. | JavaScript enable pages to have actions, fetch content, animate, etc | . . .",
+          "url": "https://srihitakott1213.github.io/GroupFastpages/frontend/overview",
+          "relUrl": "/frontend/overview",
           "date": ""
       }
       
@@ -59,7 +81,7 @@
   
 
   
-      ,"page12": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://srihitakott1213.github.io/GroupFastpages/robots.txt",
